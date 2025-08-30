@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clearPreviousTranscriptions();
 
       // Connect to WebSocket with session ID
-      audioStreamSocket = new WebSocket(`wss://three0days-murf-ai-agent.onrender.com/ws/audio-stream?session_id=${sessionId}`);
+      audioStreamSocket = new WebSocket(`wss://voice-agent-girdhar.onrender.com/ws/audio-stream?session_id=${sessionId}`);
 
       audioStreamSocket.onopen = function (event) {
         updateConnectionStatus("connected", "Connected");
